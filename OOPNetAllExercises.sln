@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPExercise01Task03", "Exer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPExercise01Task05", "Exercise01\OOPExercise01Task05\OOPExercise01Task05.csproj", "{C718A9A1-9C7A-4846-B9D8-D75D0B9944BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPExercise01Task06", "Exercise01\OOPExercise01Task06\OOPExercise01Task06.csproj", "{F07A0686-5372-4CAB-BC68-0B6B2E52E849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPExercise01Task06", "Exercise01\OOPExercise01Task06\OOPExercise01Task06.csproj", "{F07A0686-5372-4CAB-BC68-0B6B2E52E849}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{79AD5CDE-735B-46B3-A31D-A874B23C993E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{79AD5CDE-735B-46B3-A31D-A874B23C993E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPExercise01Task07", "Exercise01\OOPExercise01Task07\OOPExercise01Task07.csproj", "{FD4014B0-076A-4C5E-BFB5-DAE6B701FEB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{79AD5CDE-735B-46B3-A31D-A874B23C993E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79AD5CDE-735B-46B3-A31D-A874B23C993E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79AD5CDE-735B-46B3-A31D-A874B23C993E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4014B0-076A-4C5E-BFB5-DAE6B701FEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4014B0-076A-4C5E-BFB5-DAE6B701FEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4014B0-076A-4C5E-BFB5-DAE6B701FEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4014B0-076A-4C5E-BFB5-DAE6B701FEB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
