@@ -1,6 +1,4 @@
-using Utilities;
-
-namespace OOPExercise01Task08
+namespace Task08
 {
     public partial class MainForm : Form
     {
@@ -9,7 +7,7 @@ namespace OOPExercise01Task08
             InitializeComponent();
         }
 
-        private void btnShowNewForm_Click(object sender, EventArgs e)
+        private void OpenForm_Click(object sender, EventArgs e)
         {
             new CustomForm().Show();
         }
