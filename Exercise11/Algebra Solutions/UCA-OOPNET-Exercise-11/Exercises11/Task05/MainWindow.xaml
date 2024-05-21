@@ -1,0 +1,77 @@
+﻿<Window x:Class="Task05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task05"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="525">
+    <Grid>
+        <Ellipse HorizontalAlignment="Center" 
+                 VerticalAlignment="Center" 
+                 Width="200" 
+                 Height="200"
+                 Fill="AliceBlue"
+                 StrokeThickness="5"
+                 Stroke="Black">
+            <Ellipse.Triggers>
+                <EventTrigger RoutedEvent="Ellipse.MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="StrokeThickness"
+                                                 From="5"
+                                                 To="10"
+                                                 Duration="0:0:.5"/>
+                                <ColorAnimation Storyboard.TargetProperty="Stroke.Color"
+                                                From="Black"
+                                                To="Orange"
+                                                Duration="0:0:.5"/>
+                                <ColorAnimation Storyboard.TargetProperty="Fill.Color"
+                                                From="AliceBlue"
+                                                To="DarkRed"
+                                                Duration="0:0:.5"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Width"
+                                                 From="200"
+                                                 To="300"
+                                                 Duration="0:0:.5"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Height"
+                                                 From="200"
+                                                 To="300"
+                                                 Duration="0:0:.5"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Ellipse.MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="StrokeThickness"
+                                                 From="10"
+                                                 To="5"
+                                                 Duration="0:0:.2"/>
+                                <ColorAnimation Storyboard.TargetProperty="Stroke.Color"
+                                                From="Orange"
+                                                To="Black"
+                                                Duration="0:0:.2"/>
+                                <ColorAnimation Storyboard.TargetProperty="Fill.Color"
+                                                From="DarkRed"
+                                                To="AliceBlue"
+                                                Duration="0:0:.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Width"
+                                                 From="300"
+                                                 To="200"
+                                                 Duration="0:0:.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Height"
+                                                 From="300"
+                                                 To="200"
+                                                 Duration="0:0:.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Ellipse.Triggers>
+        </Ellipse>
+    </Grid>
+</Window>

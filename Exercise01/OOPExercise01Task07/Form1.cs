@@ -59,7 +59,7 @@ namespace OOPExecise01Task07
                 return;
             }
 
-            //addedPanel.Location = new Point(addedPanel.Location.X + x, addedPanel.Location.Y + y);
+            //addedPanel.Location = new Point(addedPanel.Location.X + x, addedPanel.Location.Y + y);r
 
             // or 
             addedPanel.Location = new Point

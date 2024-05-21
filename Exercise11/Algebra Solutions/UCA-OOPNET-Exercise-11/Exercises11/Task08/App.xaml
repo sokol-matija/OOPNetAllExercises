@@ -1,0 +1,14 @@
+﻿<Application x:Class="Task08.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Task08"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <RadialGradientBrush x:Key="background">
+            <RadialGradientBrush.GradientStops>
+                <GradientStop Color="Green" Offset="0"/>
+                <GradientStop Color="Lime" Offset="1"/>
+            </RadialGradientBrush.GradientStops>
+        </RadialGradientBrush>
+    </Application.Resources>
+</Application>
