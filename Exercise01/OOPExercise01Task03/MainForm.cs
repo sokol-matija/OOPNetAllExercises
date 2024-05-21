@@ -1,10 +1,47 @@
+
 namespace OOPExercise01Task03
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        private Random random = new Random();
+
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void ChangeCollorAndSize_Click(object sender, EventArgs e)
+        {
+            Size = GetRandomSize();
+            BackColor = GetRandomColor();
+            CenterButton();
+            CenterForm();
+        }
+
+
+        private Size GetRandomSize()
+        {
+            return new Size(random.Next(200, 800), random.Next(200, 600));
+        }
+
+        private Color GetRandomColor()
+        {
+            return Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
+        }
+
+        private void CenterButton()
+        {
+            btnChangeCollorAndSize.Location = new Point
+                (
+                (ClientSize.Width - btnChangeCollorAndSize.Width) / 2, (ClientSize.Height - btnChangeCollorAndSize.Height)
+                / 2);
+            
+        }
+
+        private void CenterForm()
+        {
+            // Center the form on the screen
+            StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }
