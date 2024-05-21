@@ -15,7 +15,6 @@ namespace OOPExercise01Task03
             Size = GetRandomSize();
             BackColor = GetRandomColor();
             CenterButton();
-            CenterForm();
         }
 
 
@@ -31,17 +30,10 @@ namespace OOPExercise01Task03
 
         private void CenterButton()
         {
-            btnChangeCollorAndSize.Location = new Point
-                (
-                (ClientSize.Width - btnChangeCollorAndSize.Width) / 2, (ClientSize.Height - btnChangeCollorAndSize.Height)
-                / 2);
-            
+            btnChangeCollorAndSize.Location = new Point(
+                (ClientSize.Width - btnChangeCollorAndSize.Width) / 2,
+                (ClientSize.Height - btnChangeCollorAndSize.Height) / 2);
         }
 
-        private void CenterForm()
-        {
-            // Center the form on the screen
-            StartPosition = FormStartPosition.CenterScreen;
-        }
     }
 }
