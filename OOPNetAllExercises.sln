@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPExercise01Task01", "Exer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPExercise01Task02", "Exercise01\OOPExercise01Task02\OOPExercise01Task02.csproj", "{AB2DFB27-DF5C-459B-BCFF-992BF692F422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPExercise01Task03", "Exercise01\OOPExercise01Task03\OOPExercise01Task03.csproj", "{D193D7FE-751F-47EE-851F-95355BF24815}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPExercise01Task03", "Exercise01\OOPExercise01Task03\OOPExercise01Task03.csproj", "{D193D7FE-751F-47EE-851F-95355BF24815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPExecise01Task04", "Exercise01\OOPExecise01Task04\OOPExecise01Task04.csproj", "{E75E7AC0-8AC8-495D-A5C6-3D5CC5700F2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D193D7FE-751F-47EE-851F-95355BF24815}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D193D7FE-751F-47EE-851F-95355BF24815}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D193D7FE-751F-47EE-851F-95355BF24815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E75E7AC0-8AC8-495D-A5C6-3D5CC5700F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E75E7AC0-8AC8-495D-A5C6-3D5CC5700F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E75E7AC0-8AC8-495D-A5C6-3D5CC5700F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E75E7AC0-8AC8-495D-A5C6-3D5CC5700F2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
