@@ -56,7 +56,7 @@ namespace OOPExercise01Task06
         {
             foreach (Panel panel in pnlContainer.Controls)
             {
-                panel.Controls.Clear();
+                            panel.Controls.Clear();
             }
         }
     }
