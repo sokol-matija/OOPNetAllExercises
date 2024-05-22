@@ -56,7 +56,6 @@ namespace OOPExercise02Task07
             {
                 scorredPoints += (int)panel.Tag;
                 lblPoints.Text = scorredPoints.ToString();
-                // remove clicked panel
                 gamePanel.Controls.Remove(panel);
                 if (gamePanel.Controls.Count == 1 && gamePanel.Controls[0].BackColor == Color.Red || gamePanel.Controls.Count == 0)
                 {
