@@ -7,21 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
-namespace Task05
+namespace OOPExercise02Task05
 {
     public partial class TextInput : Form
     {
         public TextInput()
         {
             InitializeComponent();
-
         }
 
         public string GetText()
         {
-            return txtInput.Text;
+            return txtTxt.Text;
+        }
 
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
