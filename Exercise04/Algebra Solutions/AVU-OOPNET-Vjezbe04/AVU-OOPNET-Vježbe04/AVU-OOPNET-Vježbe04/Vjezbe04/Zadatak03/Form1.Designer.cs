@@ -100,7 +100,7 @@
             // 
             this.editToolStripMenuItem.Image = global::Zadatak03.Properties.Resources.Edit;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.cmsEventhandler);
             // 
