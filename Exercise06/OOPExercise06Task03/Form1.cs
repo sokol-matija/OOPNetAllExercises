@@ -1,6 +1,7 @@
-using System.Windows.Forms;
 
-namespace Task03
+using Utilities;
+
+namespace OOPExercise06Task03
 {
     public partial class Form1 : Form
     {

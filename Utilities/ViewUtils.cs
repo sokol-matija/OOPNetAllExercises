@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task03
+namespace Utilities
 {
-    internal class ViewUtils
+    public class ViewUtils
     {
         public static Control GetThumbnailPicture(string filePath, Control parentContainer)
         {
