@@ -48,7 +48,7 @@ namespace OOPExercise05Task01Practice01
         private void Picture_MouseClick(object? sender, MouseEventArgs e)
         {
             PictureBox? picture = sender as PictureBox;
-            if(picture is null)
+            if (picture is null)
             {
                 return;
             }
@@ -59,7 +59,7 @@ namespace OOPExercise05Task01Practice01
             }
             else if (e.Button == MouseButtons.Right)
             {
-                RemovePicture(picture);
+                UpdatePicture(picture);
             }
         }
 
@@ -81,6 +81,15 @@ namespace OOPExercise05Task01Practice01
             btnRemoveImage.Enabled = true;
         }
 
+        private void UpdatePicture(PictureBox picture)
+        {
+            UpdatePictureForm updatePictureForm = new UpdatePictureForm(picture);
+            if (updatePictureForm.ShowDialog() == DialogResult.OK)
+            {
+                picture.Image = updatePictureForm.GetNewPicture().Image;
+            }
+        }
+
         private Size GetPictureSize()
         {
             int width = pnlContainer.Width / 2 - 10;
@@ -97,12 +106,74 @@ namespace OOPExercise05Task01Practice01
 
         private void OpenProject_Click(object sender, EventArgs e)
         {
+            OpenFileDialog ofd = new OpenFileDialog
+            {
+                Filter = "Text files |*.txt|All files|*.*"
+            };
 
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                OpenProject(ofd.FileName);
+            }
+        }
+
+        private void OpenProject(string filePath)
+        {
+            try
+            {
+                string[] lines = File.ReadAllLines(filePath);
+                pnlContainer.Controls.Clear();
+                foreach (var line in lines)
+                {
+                    ShowPicture(line);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
         }
 
         private void Save_Click(object sender, EventArgs e)
         {
+            SaveFileDialog sfd = new SaveFileDialog
+            {
+                Filter = "Text files |*.txt|All files|*.*"
+            };
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                SaveProject(sfd.FileName);
+            }
+        }
 
+        private void SaveProject(string filePath)
+        {
+            List<string> lines = new List<string>();
+            foreach (var control in pnlContainer.Controls)
+            {
+                if (control is PictureBox picture)
+                {
+                    lines.Add(picture.ImageLocation);
+                }
+            }
+
+            try
+            {
+                File.WriteAllLines(filePath, lines);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            string filePat = $"{Application.StartupPath}\\pictures.txt";
+            SaveProject(filePat);
+            OpenProject(filePat);
         }
     }
 }
