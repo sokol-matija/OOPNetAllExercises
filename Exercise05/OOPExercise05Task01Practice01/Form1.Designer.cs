@@ -136,6 +136,8 @@
             // 
             // pnlContainer
             // 
+            pnlContainer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnlContainer.AutoScroll = true;
             pnlContainer.Location = new Point(0, 49);
             pnlContainer.Name = "pnlContainer";
             pnlContainer.Size = new Size(800, 375);
@@ -170,6 +172,7 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            Resize += Form1_Resize;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             menuStrip1.ResumeLayout(false);

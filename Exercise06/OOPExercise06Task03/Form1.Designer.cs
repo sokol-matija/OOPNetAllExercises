@@ -1,4 +1,4 @@
-﻿namespace Task03
+﻿namespace OOPExercise06Task03
 {
     partial class Form1
     {
